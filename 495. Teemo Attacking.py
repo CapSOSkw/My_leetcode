@@ -56,9 +56,9 @@ class Solution:
 s = Solution()
 
 time = [1, 4, 6]
-duration = 2
+duration = 99
 
-s.findPoisonedDuration(time, duration)
+print(s.findPoisonedDuration(time, duration))
 
 
 

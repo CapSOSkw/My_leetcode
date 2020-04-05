@@ -29,7 +29,7 @@ class Solution:
         # 对比 ith 的0， 1 数量， score =  N(0) * N(1)
 
         temp = zip(*map('{:032b}'.format, nums))
-        # print(list(map('{:032b}'.format, nums)))
+        print(list(map('{:032b}'.format, nums)))
         print(list(zip(*map('{:032b}'.format, nums))))
 
         result = sum(b.count('0') * b.count('1') for b in temp)

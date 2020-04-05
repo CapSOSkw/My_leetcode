@@ -70,13 +70,13 @@ def f(n):
 
         return [3] * q + [n - 3*q]
 
-# print(f(3))
+print(f(17))
 
 
 s = Solution()
 
 
-print(s.integerBreak(3))
+# print(s.integerBreak(3))
 
 
 

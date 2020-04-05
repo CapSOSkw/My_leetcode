@@ -26,7 +26,7 @@ class Solution:
         """
         carry = 1
         result = [0] * len(digits)
-        for i in range(len(digits) - 1, -1, -1):
+        for i in range(len(digits) - 1, -1, -1):   # do calculation from end to start by step of -1
             temp = digits[i] + carry
             if temp == 10:
                 carry = 1
@@ -43,4 +43,4 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.plusOne([1,0,0,0]))
+    print(s.plusOne([9,9,9]))

@@ -20,11 +20,12 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        last_idx = {n: idx for idx, n in enumerate(nums)}
+        last_idx = {n: idx for idx, n in enumerate(nums)}   # get the last index of each number
 
         res = []
         for k, v in last_idx.items():
-            if nums.index(k) == v:
+
+            if nums.index(k) == v:  # if the first index of number equals to the last index, then append to the result
                 res.append(k)
 
         return res

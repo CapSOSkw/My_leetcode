@@ -62,6 +62,6 @@ class Solution:
 
 s = Solution()
 
-x = [1,2,3,3,3,4,5,6]
+x = [1,2,3,4]
 print(s.numberOfArithmeticSlices(x))
 

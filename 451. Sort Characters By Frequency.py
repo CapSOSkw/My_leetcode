@@ -48,7 +48,8 @@ class Solution:
         l = [(v, c) for v, c in counter.items()]
         l.sort(key=lambda x: -x[1])
 
-        characters = [c[0]*c[1] for c in l]
+        characters = [c[0] * c[1] for c in l]
+        print(characters)
 
         return ''.join(characters)
 

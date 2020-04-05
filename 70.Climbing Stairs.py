@@ -46,7 +46,7 @@ if __name__ == '__main__':
     s = Solution()
     s.climbStairs(3)
 
-    int('11', 2)
+
 
 '''
 Approach 3: Dynamic Programming
