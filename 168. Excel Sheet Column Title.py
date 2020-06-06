@@ -51,4 +51,4 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.convertToTitle(703))
+    print(s.convertToTitle(27))

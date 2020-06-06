@@ -38,6 +38,7 @@ class Solution:
         # and splice them back together
         length = len(nums)
         rotated_elems = nums[:-k % length]  # allows for rotation > length, using a mod
+
         beginning_elems = nums[length - k:]
         nums[:k], nums[k:] = beginning_elems, rotated_elems
 

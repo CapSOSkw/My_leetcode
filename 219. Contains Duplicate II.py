@@ -45,7 +45,7 @@ class Solution:
         return False
 
 s = Solution()
-nums = [99, 99]
-k = 2
+nums = [1,2,3,1,2,3]
+k = 1
 
 print(s.containsNearbyDuplicate(nums, k))

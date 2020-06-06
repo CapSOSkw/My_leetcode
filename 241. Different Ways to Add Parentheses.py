@@ -37,7 +37,8 @@ class Solution:
 
         tokens = re.split('(\D)', input)
         nums = list(map(int, tokens[::2]))
-        ops = list(map({'+': operator.add, '-': operator.sub, '*': operator.mul}.get, tokens[1::2]))
+        ops = list(map({'+': operator.add, '-': operator.sub,
+                        '*': operator.mul}.get, tokens[1::2]))
 
         def build(lo, hi):
             if lo == hi:

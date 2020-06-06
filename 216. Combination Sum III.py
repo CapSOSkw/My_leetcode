@@ -34,7 +34,7 @@ class Solution:
                     return
             for i in range(start, 9):
                 if n < start: break
-                dfs(k - 1, n - i, ans + [i], res, i + 1)
+                dfs(k-1, n-i, ans+[i], res, i+1)
             return res
 
 
