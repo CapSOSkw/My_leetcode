@@ -39,7 +39,6 @@
 Q： 为何需要暂存 rootroot 的左子节点？
 A： 在递归右子节点 “root.left = mirrorTree(root.right);root.left=mirrorTree(root.right);” 执行完毕后， root.leftroot.left 的值已经发生改变，此时递归左子节点 mirrorTree(root.left)mirrorTree(root.left) 则会出问题。
 
-
 '''
 
 
