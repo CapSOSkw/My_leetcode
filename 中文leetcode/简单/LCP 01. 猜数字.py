@@ -31,5 +31,15 @@ answer的元素取值为 {1, 2, 3} 之一。
 
 '''
 
+'''
+思路：遍历，每个元素对应比较。相等则加一
+'''
+
 class Solution:
     def game(self, guess, answer):
+        cnt = 0
+        for idx in range(len(guess)):
+            if guess[idx] == answer[idx]:
+                cnt += 1
+
+        return cnt
