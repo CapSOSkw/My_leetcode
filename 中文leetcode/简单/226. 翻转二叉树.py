@@ -26,8 +26,6 @@
 交换当前节点的左右节点，再递归的交换当前节点的左节点，递归的交换当前节点的右节点
 '''
 
-
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

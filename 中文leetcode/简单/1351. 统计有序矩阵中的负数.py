@@ -43,13 +43,13 @@ n == grid[i].length
 class Solution:
     def countNegatives(self, grid) -> int:
         total = 0
-        i, j = 0, len(grid[0]) - 1
+        i, j = 0, len(grid[0]) - 1 # 从右上遍历到左下
 
         while i < len(grid) and j >= 0:
 
-            if grid[i][j] >= 0:
+            if grid[i][j] >= 0:   # 如果该元素大于等于0，则该行之后遍历的都为正数，直接计算下一行
                 i += 1
-            else:
+            else:   # 如果该元素为负数，该列之后的遍历都为负数，只要知道这个元素在第几行，用总行数减去现在的行
                 total += len(grid) - i
                 j -= 1
 
