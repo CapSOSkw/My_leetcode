@@ -73,4 +73,4 @@ class Solution:
             for child in root.children:
                 stack.append(child)
 
-        return result
+        return result[::-1]

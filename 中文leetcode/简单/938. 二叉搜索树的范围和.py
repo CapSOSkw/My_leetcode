@@ -45,7 +45,7 @@ class Solution:
             if L<=node.val<=R:
                 self.ans += node.val
 
-            if node.val < L:
+            if node.val > L:
                 dfs(node.left)
 
             if node.val < R:
