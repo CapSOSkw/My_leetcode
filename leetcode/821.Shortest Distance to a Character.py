@@ -23,9 +23,9 @@ class Solution:
         :rtype: List[int]
         """
         c_index = [idx for idx, n in enumerate(S) if n == C]
-        # print(c_index)
+        print(c_index)
         pop_index = [(c_index[i] + c_index[i+1]) // 2 for i in range(len(c_index) - 1)] + [len(S)]
-        # print(pop_index)
+        print(pop_index)
 
         result = []
         for i in range(len(S)):
@@ -37,7 +37,7 @@ class Solution:
         return result
 
 if __name__ == '__main__':
-    S = 'loveleetcode'
+    S = 'engineers learn engineering'
     C = 'e'
     s = Solution()
     s.shortestToChar(S, C)

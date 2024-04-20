@@ -19,17 +19,17 @@ class Solution:
 
         if len(nums) == 1: return nums[0]
 
-        dp = nums[:]   # # 初始化dp数组，dp[i]存储以nums[i]为结尾的子数组的和的最大值
+        dp = nums[:]   # 初始化dp数组，dp[i]存储以nums[i]为结尾的子数组的和的最大值
         res = dp[0]
 
         for i in range(1, len(nums)):
             dp[i] = max(dp[i], dp[i]+dp[i-1])    # # 更新dp[i]
             res = max(res, dp[i])    # 更新全局最大值
-
+        print(dp)
         return res
 
 
-print(Solution().maxSubArray([-2,1,-3, 4,-1,2,1,-5, 4]))
+print(Solution().maxSubArray([-2,-3,4,-1,-2,1,5,-3]))
 
 
 

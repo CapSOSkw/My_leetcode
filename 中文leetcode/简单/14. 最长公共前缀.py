@@ -1,4 +1,4 @@
-'''
+"""
 编写一个函数来查找字符串数组中的最长公共前缀。
 
 如果不存在公共前缀，返回空字符串 ""。
@@ -16,10 +16,12 @@
 
 所有输入只包含小写字母 a-z 。
 
-'''
+"""
+
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        ans = ''
+        ans = ""
 
         for i in zip(*strs):
             if len(set(i)) == 1:
